@@ -1,0 +1,50 @@
+﻿@model WebFormsMVC.Models.User
+@{
+    
+}
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        .email{
+            background-color:red;
+        }
+    </style>
+    <body>
+     <form  method="post">
+         <table>
+           <tr>
+            <tr>
+                <th>UserId:</th>
+                <td><input type="text" id="id" name="id" value="@ViewBag.Id" /></td>
+            </tr>
+            <tr>
+                <th>UserName:</th>
+                <td><input type="text" id="name" name="name"  value="@ViewBag.Name"/></td>
+            </tr>
+            <tr>
+                <th class="email">Email:</th>
+                <td><input type="email" id="email" name="email"  value="@ViewBag.Email"/></td>
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" id="password" name="password" value="@ViewBag.Password" /></td>
+            </tr>
+            @if(ViewBag.Id==null)
+            {
+                <tr>
+                    <th><input type="submit" value="submit" /></th>
+
+                    <th><button type="submit" formaction="@Url.Action("UserList")">UsersList</button></th>
+                </tr>
+            }
+            else{
+            <tr>
+                <th><input type="submit" value="Update"  /></th>
+           </tr>
+            }
+         </table>
+     </form>
+    </body>
+</html>

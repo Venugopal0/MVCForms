@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\yaramada.venugopal\source\repos\FormsMVC\WebFormsMVC\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-08-22T05:39:42.0887499Z||;True|2024-08-22T11:08:10.9385165+05:30||;True|2024-08-22T11:04:49.4822105+05:30||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="myDb1">
+      <Value>server=CDC2-L-F2AM3S8%3bdatabase=Venu%3bTrusted_Connection=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
